@@ -102,17 +102,29 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-CA-mB7">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="grz-1y-ZRa"/>
+                                    <constraint firstAttribute="height" constant="50" id="xbs-Vz-HA4"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
+                            <constraint firstItem="hzt-CA-mB7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Nf-lC-KS4"/>
                             <constraint firstItem="KVR-oJ-5ja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="98F-TV-5um"/>
                             <constraint firstItem="KVR-oJ-5ja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CuG-ra-YBE"/>
+                            <constraint firstItem="hzt-CA-mB7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HY8-dh-Zz7"/>
+                            <constraint firstItem="hzt-CA-mB7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mlf-Wc-Cgh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KVR-oJ-5ja" secondAttribute="bottom" id="jNd-UD-ge9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVR-oJ-5ja" secondAttribute="trailing" constant="20" id="l8B-Ld-T4A"/>
+                            <constraint firstItem="hzt-CA-mB7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uCO-EW-Kcn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="hzt-CA-mB7" id="4KK-ex-fZl"/>
                         <outlet property="counterLabel" destination="aEs-O5-OJf" id="Qsy-nb-Ypw"/>
                         <outlet property="imageView" destination="Kha-3q-BNw" id="ytV-dJ-5zU"/>
                         <outlet property="textLabel" destination="FCB-mf-RuQ" id="aXS-iy-e26"/>
@@ -125,7 +137,7 @@
     </scenes>
     <resources>
         <namedColor name="YP Black">
-            <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="YP White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
