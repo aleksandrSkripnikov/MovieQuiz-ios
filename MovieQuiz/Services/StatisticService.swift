@@ -81,8 +81,8 @@ extension StatisticServiceImpl: StatisticService {
     }
     
     func store(correct: Int, total: Int) {
-        self.correct += correct
-        self.total += total
+        self.correct = correct
+        self.total = total
         self.gemasCount += 1
         
         let date = dateProvider()

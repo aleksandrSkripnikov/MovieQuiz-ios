@@ -2,7 +2,6 @@ import Foundation
 import UIKit
 
 protocol AlertPresenter {
-    
     func show(alertModel: AlertModel)
 }
 
@@ -12,7 +11,6 @@ final class AlertPresenterImpl {
     init(viewController: UIViewController? = nil) {
         self.viewController = viewController
     }
-    
 }
 
 extension AlertPresenterImpl: AlertPresenter {
