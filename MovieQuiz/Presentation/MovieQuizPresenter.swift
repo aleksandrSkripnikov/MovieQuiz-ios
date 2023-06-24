@@ -124,6 +124,11 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
     }
     
     func makeResultMessage() -> String {
+        
+        if statisticService.bestGame == nil {
+            statisticService.store(correct: correctAnswers, total: questionsAmount)
+        }
+        
         guard let statisticService = statisticService, let bestGame = statisticService.bestGame else {
             assertionFailure("error message")
             return ""
